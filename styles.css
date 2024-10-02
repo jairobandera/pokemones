@@ -1,0 +1,83 @@
+/* Fondo con degradado desde naranja hacia blanco */
+body {
+    background: radial-gradient(circle, #ffffff 0%, #ff8c00 60%, #ff4500 100%);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajustar tamaño de las tarjetas */
+.card {
+    max-width: 200px; /* Tamaño máximo para que las tarjetas sean más pequeñas */
+    display: block;
+    margin: 0 auto; /* Centramos las tarjetas */
+    width: 35em;
+    margin-bottom: 5px; /* Reduce el margen inferior */
+}
+
+
+.card img {
+    width: 70%;
+    display: block;
+    margin: 0 auto; 
+    margin-bottom: -30px;
+}
+
+/* Estilo para alinear los botones uno al lado del otro */
+.card-body .btn-group {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 5px;
+}
+
+/* Estilo para los botones, más pequeños */
+.card-body .btn {
+    font-size: 0.85rem;
+    padding: 3px 10px;
+    flex: 1;
+    margin: 0 5px;
+}
+
+#detallesAgregar{
+    height: 4em;
+}
+
+.pokemon-image-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin-top: -60px; /* Subir la imagen sobre el modal */
+    position: relative;
+    border: 1px solid black; /* Borde blanco para que parezca flotante */
+    background-color: yellow;
+    border-radius: 50%;
+  }
+  
+  .pokemon-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen se ajuste al círculo */
+  }
+  
+  .modal-body {
+    padding-top: 75px;
+  }
+  
+  #pokemonName {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+#pokemonDetails {
+    font-size: 1rem;
+}
+
+#listaFavoritos {
+    font-size: 1rem;
+}
+
+
+
